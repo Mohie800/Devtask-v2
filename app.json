@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "DevTask",
+    "slug": "devtask",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "devtask",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.devtask.app"
+    },
+    "android": {
+      "package": "com.devtask.app",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-sqlite"
+    ]
+  }
+}
