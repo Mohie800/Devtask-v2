@@ -92,6 +92,29 @@ src/
 └── utils/
 ```
 
+
+## GitHub Actions builds
+
+This repo includes two workflows:
+
+- `CI` runs dependency install, core date-engine tests, and TypeScript checks on pushes and pull requests.
+- `Android Build` runs manual Expo/EAS builds for Android only.
+
+### Required GitHub secret
+
+Create an Expo access token in your Expo account, then add it to GitHub:
+
+1. GitHub repo → **Settings** → **Secrets and variables** → **Actions**
+2. Add repository secret: `EXPO_TOKEN`
+3. GitHub repo → **Actions** → **Android Build** → **Run workflow**
+4. Choose the Android build profile
+
+Profiles:
+
+- `development`: Android APK for development client/internal distribution
+- `preview`: Android APK for internal testing
+- `production`: Android AAB for release
+
 ## Implementation notes
 
 - Data is local-only. There is no backend, account system, or cloud sync.
